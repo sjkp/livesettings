@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "AppSettings";
+}
+
+<h2>AppSettings</h2>
+Shows the app settings as your Application running in azure sees them. Some might be environement settings while others might come from web.config. 
+
+<div id="container" style="width:800px;height:600px;border:1px solid grey"></div>
+
+<script src="/node_modules/monaco-editor/min/vs/loader.js"></script>
+<script>
+    require.config({ paths: { 'vs': '/node_modules/monaco-editor/min/vs' }});
+    require(['vs/editor/editor.main'], function() {
+        var editor = monaco.editor.create(document.getElementById('container'), {
+            value: '@Html.Raw(ViewBag.AppSettings)',
+            language: 'xml'
+        });
+        editor.getAction('editor.action.format').run();
+    });
+</script>

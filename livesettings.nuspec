@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>livesettings</id>
+    <title>Live Settings</title>
+    <version>0.0.1</version>
+    <authors>SJKP</authors>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/sjkp/sjkp</projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Show the app settings as the Azure Web Apps sees them. The extension will merge web.config with the environment settings and output the setting in an easy to copy format. Useful for debugging purposes where you want to copy the settings to a local app.config/web.config file.</description>
+    <tags>app settings config web</tags>
+  </metadata>
+  <files>
+    <file src="artifacts\**\*.*" target="content" />
+  </files>
+</package>
