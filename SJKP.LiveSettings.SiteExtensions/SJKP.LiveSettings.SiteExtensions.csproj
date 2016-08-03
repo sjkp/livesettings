@@ -351,6 +351,9 @@
     <Content Include="node_modules\monaco-editor\min-maps\vs\nls.js.map" />
     <Content Include="node_modules\monaco-editor\package.json" />
     <Content Include="node_modules\monaco-editor\README.md" />
+    <Content Include="applicationHost.xdt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
